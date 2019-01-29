@@ -12,7 +12,7 @@ describe('Handling Multiple Windows', function() {
 	});
 	
 	it('Go!', async function() {
-		this.retries(2);
+		// this.retries(2);
 		try {
 			await home.get_page();
 			expect(await driver.getTitle()).to.equal('Harrison Kinsley');
